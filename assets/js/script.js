@@ -87,3 +87,36 @@ const pauseMovie = () => {
     setPlayButtonAccessibleText();
   };
   
+  const deleteMovie = (id) => {
+    if (userData?.currentMovie?.id === id) {
+      userData.currentMovie = null;
+      userData.movieCurrentTime = 0;
+  
+      pauseMovie();
+      setPlayerDisplay();
+    }
+  
+    userData.movies = userData?.movies.filter((movie) => movie.id !== id);
+    renderMovies(userData?.movies); 
+    highlightCurrentMovie(); 
+    setPlayButtonAccessibleText(); 
+  
+    if (userData?.movies.length === 0) {
+      const resetButton = document.createElement("button");
+      const resetText = document.createTextNode("Reset Playlist");
+  
+      resetButton.id = "reset";
+      resetButton.ariaLabel = "Reset playlist";
+      resetButton.appendChild(resetText);
+      playlistMovies.appendChild(resetButton);
+  
+      resetButton.addEventListener("click", () => {
+        userData.movies = [...allMovies];
+  
+        renderMovies(sortMovies()); 
+        setPlayButtonAccessibleText();
+        resetButton.remove();
+      });
+    }
+  };
+  
