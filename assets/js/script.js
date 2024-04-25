@@ -36,3 +36,35 @@ const allMovies = [
       src: "assets/movies/Korean_SF_Sniper_visits.mp4",
     },
   ];
+
+const video = document.getElementById("video-player");
+
+let userData = {
+  movies: [...allMovies],
+  currentMovie: null,
+  movieCurrentTime: 0,
+};
+
+const playMovie = (id) => {
+  const movie = userData?.movies.find((movie) => movie.id === id);
+
+  if (!movie) {
+    console.error("Movie not found for id:", id);
+    return;
+  }
+
+  video.src = movie.src;
+  video.title = movie.title;
+
+  if (userData?.currentMovieIndex === null || userData?.currentMovieIndex !== id) {
+    video.currentTime = 0;
+  } else {
+    video.currentTime = userData?.movieCurrentTime;
+  }
+
+  userData.currentMovieIndex = id;
+  playButton.classList.add("playing");
+
+  setPlayerDisplay();
+  video.play();
+};
