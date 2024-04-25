@@ -68,3 +68,22 @@ const playMovie = (id) => {
   setPlayerDisplay();
   video.play();
 };
+
+const pauseMovie = () => {
+    userData.movieCurrentTime = video.currentTime;
+    
+    playButton.classList.remove("playing");
+    video.pause();
+  };
+  
+  const shuffle = () => {
+    userData?.movies.sort(() => Math.random() - 0.5);
+    userData.currentMovie = null;
+    userData.movieCurrentTime = 0;
+  
+    renderMovies(userData?.movies);
+    pauseMovie();
+    setPlayerDisplay();
+    setPlayButtonAccessibleText();
+  };
+  
