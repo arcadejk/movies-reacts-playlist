@@ -120,3 +120,44 @@ const pauseMovie = () => {
     }
   };
   
+  const setPlayerDisplay = () => {
+    const playingMovie = document.getElementById("player-movie-title");
+    const movieArtist = document.getElementById("player-movie-artist");
+    const currentTitle = userData?.currentMovie?.title;
+    const currentArtist = userData?.currentMovie?.author;
+  
+    playingMovie.textContent = currentTitle ? currentTitle : "";
+    movieArtist.textContent = currentArtist ? currentArtist : "";
+  };
+  
+  const highlightCurrentMovie = () => {
+    const playlistMovieElements = document.querySelectorAll(".playlist-movie button");
+    const movieToHighlight = document.getElementById(`movie-${userData?.currentMovie?.id}`);
+  
+    playlistMovieElements.forEach((movieEl) => {
+      movieEl.removeAttribute("aria-current");
+    });
+  
+    if (movieToHighlight) movieToHighlight.setAttribute("aria-current", "true");
+  };
+
+  const renderMovies = (array) => {
+    const moviesHTML = array
+      .map((movie)=> {
+        return `
+        <li id="movie-${movie.id}" class="playlist-movie">
+          <button class="playlist-movie-info" onclick="playMovie(${movie.id})">
+            <span class="playlist-movie-title">${movie.title}</span>
+            <span class="playlist-movie-artist">${movie.author}</span>
+            <span class="playlist-movie-duration">${movie.duration}</span>
+          </button>
+          <button onclick="deleteMovie(${movie.id})" class="playlist-movie-delete" aria-label="Delete ${movie.title}">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+        </li>
+        `;
+      })
+      .join("");
+  
+    playlistMovies.innerHTML = moviesHTML;
+  };
