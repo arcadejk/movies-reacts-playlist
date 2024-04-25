@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch and interact with video reactions to popular Korean movies. Explore different perspectives and enhance your viewing experience.">
+    <meta name="keywords" content="Korean movies, Korean cinema, video reactions, Korean movie reacts, Korean film reactions">
+    <title>Korean Movie Reacts</title>
+    <script src="https://kit.fontawesome.com/be58f692ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Korean Movie Reacts</h1>
+        <video id="video-player" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      <div id="player">
+        <h2 id="player-movie-title"></h2>
+        <p id="player-movie-artist"></p>
+        <div id="controls">
+            <button data-type="previous" id="previous" aria-label="previous">
+                <i class="fa-solid fa-backward"></i></button>
+
+            <button data-type="play" id="play" aria-label="play">
+                <i class="fa-solid fa-play"></i></button>
+
+            <button data-type="pause" id="pause" aria-label="pause">
+                <i class="fa-solid fa-pause"></i></button>
+
+            <button data-type="next" id="next" aria-label="next">
+                <i class="fa-solid fa-forward"></i></button>
+
+            <button data-type="shuffle" id="shuffle" aria-label="shuffle">
+                <i class="fa-solid fa-shuffle"></i></button>
+        </div>
+      </div>
+      <div id="playlist">
+        <h2>Playlist</h2>
+        <ul id="playlist-movies"></ul>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
