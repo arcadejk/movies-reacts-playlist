@@ -1,0 +1,147 @@
+body {
+    background-color: #00000094;
+    color: #FFFFFF;
+}
+
+h1{
+  font-size: 40px;
+  padding-top: 40px;;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  row-gap: 5px;
+}
+
+#player, #playlist {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#player {
+  margin-right: 20px;
+}
+
+#controls {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+#playlist {
+width: 70%;
+}
+
+.playlist-movie {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.playlist-movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.playlist-movie-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#reset {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #45a049;
+}
+
+/* Style for the video player */
+#video-player {
+  width: 40%;
+  height: 50%;
+}
+
+/* Style for the video controls */
+#video-player::-webkit-media-controls {
+  /* Styling for webkit browsers like Chrome and Safari */
+  background-color: #00000080;
+  color: #ffffff;
+}
+
+#video-player::-webkit-media-controls-play-button,
+#video-player::-webkit-media-controls-pause-button {
+  /* Styling for play and pause buttons */
+  color: #ffffff; /* Text color */
+}
+
+/* Additional styles for other browsers */
+/* Add your vendor prefixes as needed */
+#video-player::-webkit-media-controls-panel {
+  background-color: #00000080;
+  color: #ffffff;
+}
+
+/* Adjust the appearance of progress bar */
+#video-player::-webkit-media-controls-current-time-display,
+#video-player::-webkit-media-controls-time-remaining-display,
+#video-player::-webkit-media-controls-timeline {
+  color: #ffffff;
+}
+
+#previous, #next {
+  display: none;
+}
+
+/* CSS for screens with a maximum width of 768 pixels */
+@media screen and (max-width: 768px) {
+
+  h1{
+    text-align : center;
+  }
+
+  /* Example: Adjust the width of the video player */
+  #video-player {
+    width: 100%; 
+  }
+
+  /* Example: Adjust the font size of the playlist */
+  #playlist-movies .playlist-movie-info {
+    font-size: 14px; 
+  }
+}
+
+/* CSS for screens with a maximum width of 480 pixels */
+@media screen and (max-width: 480px) {
+
+  h1{
+    text-align : center;
+  }
+  
+  #playlist-movies .playlist-movie-artist {
+    display: none; /* Hide the movie artist */
+  }
+
+  #playlist-movies .playlist-movie {
+    padding: 5px 0; /* Reduce top and bottom padding */
+  }
+}
