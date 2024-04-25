@@ -161,3 +161,36 @@ const pauseMovie = () => {
   
     playlistMovies.innerHTML = moviesHTML;
   };
+  const setPlayButtonAccessibleText = () => {
+    const movie = userData?.currentMovie || userData?.movies[0];
+  
+    playButton.setAttribute(
+      "aria-label",
+      movie?.title ? `Play ${movie.title}` : "Play"
+    );
+  };
+  
+  const getCurrentMovieIndex = () => userData?.movies.indexOf(userData?.currentMovie);
+  
+  playButton.addEventListener("click", () => playMovie(userData.movies[0].id));
+  pauseButton.addEventListener("click",  pauseMovie);
+  shuffleButton.addEventListener("click", shuffle);
+  
+  const sortMovies = () => {
+    userData?.movies.sort((a,b) => {
+      if (a.title < b.title) {
+        return -1;
+      }
+  
+      if (a.title > b.title) {
+        return 1;
+      }
+  
+      return 0;
+    });
+  
+    return userData?.movies;
+  };
+  
+  renderMovies(sortMovies());
+  setPlayButtonAccessibleText(); 
