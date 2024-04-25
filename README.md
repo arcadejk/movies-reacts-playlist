@@ -3,35 +3,52 @@
 ## 1 Purpose of the Project
 The Korean Movie Reacts Playlist Website is designed to provide fans of Korean cinema a unique experience where they can watch and interact with video reactions to popular Korean movies. The project aims to foster a community of enthusiasts who share a passion for the depth, emotion, and artistry of Korean films.
 
-![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/c7e283c3-9b4b-4a65-8b8a-319fb467419b)
+
+
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/45c74fee-72c7-495c-b80c-d50d1b44867e)
+
 
 
 ## 2 User Stories
 - **As a user, I want to:** view a selection of video reactions to Korean movies so that I can see different perspectives and enhance my viewing experience.
 - **As a user, I want to:** navigate between different reaction videos easily to explore various content without hassle.
 - **As a user, I want to:** play, pause, and skip through videos so that I have complete control over the viewing experience.
+- 
 
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/637042e9-1a41-4986-9ade-cd601fd5a2fe)
+  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/345fb2c3-85b5-4597-b199-359cbed2e90c)
+
 
 
 ## 3 Features
 - **Video Playback:** Users can watch video reactions through an embedded video player.
 
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/a3ea5f51-0372-4c4c-ab99-b0a0410f4208)
+ ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/1b33133a-60f5-4377-bdd0-8c9dd3679a12)
+
 
 - **Navigation Controls:** Play, pause, skip, and rewind functionalities are provided to control video playback.
+- 
 
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/ae92d5c4-7475-4920-8a41-618470a84b65)
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/bf2d6f1d-a730-426f-94e5-11a8385bdb57)
+
 
 - **Responsive Design:** Ensures a seamless viewing experience on devices of various sizes.
 
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/f8828d78-65f6-4e7a-8c14-a00fbeeb85f3)
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/1e22232f-5a51-4a57-b422-8ca65b9acd31)
 
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/19c984b4-5c09-42c2-aea5-8582f9d59fa3)
 
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/8969b085-dbbc-4175-ae3b-1a546844067c)
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/b1f8519e-d7ea-40f2-9654-073571bd1033)
 
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/a7862b2b-d8c4-4820-9711-259bd16ae709)
+
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/c412e08e-f73a-4442-9936-d4d1a6c6d7a5)
+
+
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/1500553f-f94a-4be9-9197-cab7d86845df)
+
+
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/85301ef0-2247-4aaa-9a7a-d45c02256ec1)
+
+
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/edd16dbb-fc24-4a0e-9b88-941fad40faf0)
 
 
 ## 4 Future Features
@@ -39,8 +56,6 @@ The Korean Movie Reacts Playlist Website is designed to provide fans of Korean c
 - **Comment System:** Users can leave comments on videos to discuss the content with others.
 - **User Accounts and Playlists:** Ability for users to create accounts and curate their own playlists of favorite reactions.
   
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/b8df32ee-d52c-4697-92ac-9fca28016735)
-
 
 ## 5 Typography and Color Scheme
 
@@ -94,16 +109,14 @@ The features wireframe outlines specific functionalities and user interactions w
 ## 8 Testing
 ### 8.1 Code Validation
 - **HTML:** Validated using W3C Markup Validation Service.
-  W3C HTML Validator used : 51 warnings found.
-  
-  ![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/c097c3a0-314a-48a8-8ac4-63d34cab1816)
-
+  W3C HTML Validator used : 51 warnings were found.
   
 - **CSS:** Validated using W3C CSS Validation Service.
   W3C CSS Validator (Jigsaw) used 
   
 - **JavaScript:** Validated and linted with ESLint.
   JSHint JavaScript Validator used
+  
 
 ### 8.2 Test Cases:
 ## Clicking on Links and Watching Videos:
