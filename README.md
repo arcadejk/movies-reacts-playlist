@@ -96,7 +96,8 @@ In the responsive design wireframe, considerations for different screen sizes ar
 
 The features wireframe outlines specific functionalities and user interactions within the website. It details how users can play, pause, shuffle, and navigate through the playlist, providing a clear understanding of the available features and their implementation.
 
-![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/f885aa8c-c554-4856-84fe-6f95b32b937b)
+
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/35e9bee9-ab49-42d7-9a2b-f192b04e0b63)
 
 
 
@@ -127,7 +128,8 @@ The features wireframe outlines specific functionalities and user interactions w
 ## Color and Font Accessibility:
 - Ensured that colors and fonts chosen are easy to read and accessible by running the website through Lighthouse in DevTools.
 
-![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/a69e27e0-78d7-4b6f-ac7f-94ae57479a2b)
+![image](https://github.com/arcadejk/movies-reacts-playlist/assets/157130011/74df53c5-c7d4-4f69-9d3b-d9306a310c96)
+
 
 
 ### 8.3 Fixed Bugs
